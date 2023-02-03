@@ -153,8 +153,14 @@ export default {
     add(){
 
       // this.issuedrugs.unshift(this.form)
-      this.issuedrugs.push(this.form)
+      this.issuedrugs.push({...this.form})
+      // this.issuedrugs.push(this.form)
       console.log(this.issuedrugs)
+
+      for(var i=0; i< this.issuedrugs.length; i++){
+        console.log(this.issuedrugs[i].TotalPricePerDrug = this.issuedrugs[i].TotalPricePerDrug + this.issuedrugs[i].TotalPricePerDrug, "total")
+
+      }
       
       
     }
